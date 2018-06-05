@@ -1,0 +1,33 @@
+entidad Productos:
+  objcategoria-> Categoria
+  objProveedores -> Proveedores
+  objClientes -> Clientes
+  codigo -> integer
+  nombre -> string
+  precio -> integer
+  descripcion -> string
+  verdad -> booleano
+
+entidad Categoria:
+  codigo -> integer
+  nombre -> string
+
+entidad Proveedores:
+  codigo -> integer
+  nombre -> string
+  telefono -> integer
+
+entidad Clientes:
+  codigo -> integer
+  nombre -> string
+  apellido -> string
+  direccion -> string
+  telefono -> integer
+  email -> string
+
+entidad Pedido:
+  objProductos -> Productos
+  objClientes -> Clientes
+  direccionEnvio -> string
+  precio -> integer
+  fecha -> string
